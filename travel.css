@@ -1,0 +1,1016 @@
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-size: 70%;
+    scroll-behavior: smooth;
+    scroll-padding-top: 60px;
+}
+header{
+    width: 100%;
+    background-color: #333333;
+    display: flex;
+    height: 5rem;
+    z-index: 1000;
+    position: fixed;
+    top: 0; left: 0; right: 0;
+}
+#menu-bar{
+    display: none;
+}
+header > form{
+    display: block;
+}
+header > .logo{
+    width: 20%;
+    color: white;
+    font-size: 2.5rem;
+    text-transform: uppercase;
+    padding-left: .5rem;
+}
+header > .logo > span{
+    line-height: 5rem;
+}
+header > .logo > .text_color{
+    color: orange;
+}
+header > .menu{
+    width: 65%;
+    height: 100%;
+}
+
+header > .icon{
+    width: 15%;
+    /* margin-top: 1.5rem;
+    margin-left: 12rem; */
+    padding-top: 1.6rem; padding-left: 6rem;
+}
+header > .icon > a{
+    color: white;
+    font-size: 1.8rem;
+    text-decoration: none;
+}
+header > .icon > a:last-child{
+    margin-left: 1.5rem;
+}
+header > .icon > a:hover{
+    color: orange;
+}
+header > .menu{
+    width: 65%;
+}
+header > .menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    margin-right: 5%;
+    line-height: 5rem;
+}
+header > .menu > a:first-child{
+    margin-left: 10%;
+}
+header > .menu a:hover{
+    color: orange;
+}
+section.searchs{
+    width: 100%;
+    background-color: #333333;
+    height: 5rem;
+    position: fixed;
+    top:5rem;
+    z-index: 1000;
+    display: none;
+}
+section.searchs > form{
+    margin-top: 1rem;
+    margin-left: 1.5rem;
+}
+section.searchs > form input{
+    width: 98%;
+    height: 2rem;
+    height: 3rem;
+    border-radius: 5px;
+    -webkit-appearance: none;
+    border: 0!important;
+    outline: none;
+}
+section.searchs > form label{
+    color: white;
+    font-size: 1.5rem;
+}
+section.searchs > form label:hover{
+    color:orange;
+    cursor: pointer;
+}
+div.login{
+    z-index: 1002;
+    background-color: rgba(0, 0, 0, 0.7);
+    position: fixed;
+    min-height: 200vh;
+    justify-content: center;
+    width: 100%;
+    align-items: center;
+    display: none;
+}
+div.login #close{
+    position: absolute;
+    top: .5rem;
+    right: .5rem;
+    color: white;
+    font-size: 5rem;
+    opacity: 0.5;
+    cursor: pointer;
+}
+div.login > form{
+    background-color: white;
+    width: 20%;
+    position: absolute;
+    top: 20rem;
+    left: 55rem;
+}
+div.login > form > h3{
+    text-align: center;
+    font-size: 2rem;
+    padding: .8rem ;
+}
+div.login > form > .email,.password{
+    margin-left: 1rem;
+    margin-bottom: 2rem;
+    height: 3rem;
+    width: 60%;
+}
+div.login > form > input[type=checkbox]{
+    margin-left: 1rem;
+}
+div.login > form > button{
+    width: 100%;
+    background-color: black;
+    color: white;
+    border: none;
+    font-size: 2rem;
+    height: 3rem;
+    margin-top: 2rem;
+}
+div.login > form > button:hover{
+    background-color: orange;
+}
+nav.menu2{
+    width: 100%;
+    background-color: #333333;
+    display: none;
+    z-index: 10;
+}
+nav.menu2 > ul{
+    list-style-type: none;
+    padding: 0;
+    position: fixed;
+    top: 5rem;
+    width: 100%;
+    font-size: 2.5rem;
+}
+nav.menu2 > ul a{
+    display: block;
+    width: 100%;
+    text-decoration: none;
+    color: white;
+    padding: 2rem 0 2rem 2rem;
+    text-transform: uppercase;
+    border-bottom: 1px solid white;
+}
+nav.menu2 > ul > li > a:last-child{
+    border: none;
+}
+/* nav.menu2 > ul li:hover{
+    background-color: orange;
+} */
+div.video_demo{
+    width: 100%;
+    /* position: relative; */
+}
+div.video_demo > div > video{
+    width: 100%;
+}
+div.video_demo > div{
+    display: none;
+    width: 100%;
+}
+div.video_demo > #shape1{
+    display: block;
+}
+div.video_demo > .dets{
+    width: 10%;
+    position: absolute;
+    top: 70rem;
+    left: 62rem;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    padding: .5rem 0;
+    border-radius: 15px;
+    z-index: 1;
+}
+div.video_demo > .dets > span{
+    height: 2rem;
+    width: 2rem;
+    display: inline-block;
+    border-radius: 50%;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 .5rem 0 .6rem;
+}
+div.video_demo > .dets > span:first-child{
+    background-color: orange;
+}
+div.books{
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.title{
+    width: 100%;
+    text-align: center;
+    margin: 3rem 0 3rem 0;
+}
+div.title > span{
+    font-size: 3.5rem;
+    text-transform: uppercase;
+    background-color: rgba(255, 166, 0, 0.644);
+    color: white;
+    padding: 0 1rem 0 1rem;
+    margin: 0 1rem 0 1rem;
+}
+div.books > .shapes{
+    width: 68%;
+    margin-right: 2%;
+}
+div.books > .shapes img{
+    width: 100%;
+}
+div.books > .book{
+    width: 30%;
+    border: 5px ridge orange;
+}
+div.books > .book > .contact{
+    width: 100%;
+    margin: 1.5rem 0 1.5rem 0;
+    text-align: center;
+}
+div.books > .book > div.contact > span{
+    font-size: 4rem;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: orange;
+}
+div.books > .book > div.contact > span:nth-child(odd){
+    color: black;
+}
+div.books > .book > form{
+    margin-left: 2rem;
+}
+div.books > .book > form input{
+    width: 60%;
+    margin-bottom: 2rem;
+    margin-right: 10%;
+    height: 3rem;
+    border: 1px solid black;
+}
+div.books > .book > form label{
+    font-size: 1.5rem;
+    margin-right: 10%;
+}
+div.books > .book > form textarea{
+    width: 95%;
+    margin-bottom: 2rem;
+    border: 1px solid black;
+}
+div.books > .book > form ul.date{
+    display: flex;
+    padding: 0;
+    list-style-type: none;
+}
+div.books > .book > form > select{
+    width: 50%;
+    margin-right: 20%;
+    height: 3rem;
+    text-transform: capitalize;
+    margin-bottom: 2rem;
+    cursor: pointer;
+    border: 1px solid black;
+}
+div.books > .book > form > select > option{
+    font-size: 1.2rem;
+    text-transform: capitalize;
+}
+div.books > .book > form > button{
+    width: 95%;
+    height: 6rem;
+    font-size: 4rem;
+    border-radius: 5px;
+    background-color: rgba(255, 166, 0, 0.644);
+    color: white;
+    cursor: pointer;
+    border: none;
+}
+div.packages{
+    width: 100%;
+}
+div.packages > div.content{
+    width: 80%;
+    margin: 2rem auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.packages > div.content > div{
+    width: 31%;
+    margin-left: 2.3%;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 10px 10px #f0f0f0;
+}
+div.packages > div.content > div > img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+div.packages > div.content > div i{
+    color: orange;
+    margin-right: .5rem;
+}
+div.packages > div.content > div h3{
+    font-size: 2rem;
+    padding: 1rem 0 0 1rem;
+}
+div.packages > div.content > div p{
+    font-size: 1.7rem;
+    padding: 1rem 0 0 1rem;
+}
+div.packages > div.content > div > p.sale > span:last-child{
+    text-decoration: line-through;
+    font-size: 1.4rem;
+    color: gray;
+}
+div.packages > div.content > div p.book{
+    width: 40%;
+    text-align: center;
+    padding: 0;
+    margin: 1rem auto;
+}
+div.packages > div.content > div a{
+    display: block;
+    text-align: center;
+    padding: 1rem 0;
+    background-color: orange;
+    text-decoration: none;
+    color: white;
+}
+div.packages > div.content > div a:hover{
+    background-color: rgba(255, 166, 0, 0.7);
+}
+div.food{
+    width: 100%;
+}
+div.food > div.content{
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+div.food > div.content > div{
+    width: 31%;
+    margin-left: 2.3%;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 10px 10px #f0f0f0;
+}
+div.food > div.content > div > img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+div.food > div.content > div i{
+    color: orange;
+    margin-right: .5rem;
+}
+div.food > div.content > div h3{
+    font-size: 2rem;
+    padding: 1rem 0 0 1rem;
+}
+div.food > div.content > div p{
+    font-size: 1.3rem;
+    padding: 1rem 0 0 1rem;
+    text-indent: 2rem;
+    line-height: 2rem;
+}
+div.review{
+    width: 100%;
+}
+div.review > div.content{
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+}
+div.review > div.content > .next{
+    color: rgba(255, 166, 0, 0.7);
+}
+div.review > div.content > .prev{
+    color: rgba(255, 166, 0, 0.7);
+}
+div.review > div.content div.slide{
+    /* width: 100%; */
+    padding: 2rem;
+    box-shadow: 0 0 1rem 2rem #f0f0f0;
+    text-align: center;
+}
+div.review > div.content div.slide > img{
+    width: 20%;
+    border-radius: 50%;
+}
+div.review > div.content div.slide i{
+    color: orange;
+}
+div.ticket{
+    width: 100%;
+}
+div.ticket > div.content{
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2rem auto;
+}
+div.ticket > div.content > div{
+    width: 31%;
+    margin-right: 2.3%;
+    margin-bottom: 3rem;
+    box-shadow: 0px 0px 10px 10px #f0f0f0;
+    position: relative;
+    overflow: hidden;
+    
+}
+div.ticket > div.content > div > .shape img{
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+    z-index: -1;
+}
+div.ticket > div.content > div > .shape:hover > div.tickets{
+    top: 0%;
+    transition: top 0.3s;
+}
+div.ticket > div.content > div > .shape > div.tickets{
+    position: absolute;
+    top: -120%;
+    z-index: 1000;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: block;
+    width: 100%;
+    height: 25rem;
+}
+div.ticket > div.content > div > .shape > div.tickets > a{
+    padding: 1rem 3rem;
+    background-color: orange;
+    position: absolute;
+    top: 40%;
+    left: 30%;
+    font-size: 2rem;
+    color: white;
+    text-decoration: none;
+}
+div.ticket > div.content > div > .shape > div.tickets > a:hover{
+    background-color: rgba(255, 166, 0, 0.8);
+}
+
+footer{
+    background-color: #333333;
+    height: 33rem;
+    width: 100%;
+}
+footer > ul{
+    display: flex;
+    list-style-type: none;
+    padding: 0;
+    
+}
+footer > ul > li{
+    width: 20%;
+    color: white;
+    margin-left: 5%;
+    text-transform: capitalize;
+    font-size: 3rem;
+    margin-top: 2rem;
+    text-indent: 1rem;
+    margin-bottom: 2rem;
+}
+footer > ul > li > ul{
+    list-style-type: none;
+    padding: 0;
+}
+footer > ul > li:first-child  p{
+    text-indent: 1.5rem;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+}
+footer > ul > li > ul a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    margin-top: 2rem;
+    color: white;
+}
+footer > ul > li > ul a:hover{
+    color: orange;
+    text-decoration: underline;
+}
+footer > div{
+    width: 80%;
+    margin: 0 auto;
+    border-top: 1px solid black;
+}
+footer > div p{
+    text-align: center;
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* media */
+/* @media screen and (max-width: 1300px) {
+    html{
+        font-size: 60%;
+    }
+    div.video_demo > .dets{
+        width: 10%;
+        top: 70rem;
+        left: 60rem;
+        padding-left: .2rem;
+
+    }
+    div.video_demo > .dets > span{
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        margin: 0 .5rem 0 .5rem;
+    }
+} */
+@media screen and (max-width: 1500px) {
+    div.video_demo > .dets{
+        width: 11%;
+        top: 70rem;
+        left: 60rem;
+        padding-left: .2rem;
+
+    }
+    div.video_demo > .dets > span {
+        margin: 0 .7rem 0 .6rem;
+    }
+}
+@media screen and (max-width: 1400px) {
+    html{
+        font-size: 60%;
+    }
+    div.video_demo > .dets{
+        width: 10%;
+        top: 74rem;
+        left: 65rem;
+        padding-left: .2rem;
+
+    }
+    div.video_demo > .dets > span{
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        margin: 0 .7rem 0 .5rem;
+    }
+    footer{
+        height: 30rem;
+    }
+    footer > ul > li{
+        font-size: 2.5rem;
+    }
+}
+@media screen and (max-width: 1100px) {
+    html{
+        font-size: 45%;
+    }
+    div.books > .shapes img {
+        width: 100%;
+        height: 100%;
+    }
+    div.books > .shapes{
+        width: 55%;
+    }
+    div.books > .book{
+        width: 43%;
+        height: 70rem;
+    }
+    div.video_demo > .dets{
+        width: 10%;
+        top: 75rem;
+        left: 65rem;
+        padding-left: .2rem;
+
+    }
+    div.video_demo > .dets > span{
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        margin: 0 .5rem 0 .7rem;
+    }
+    div.books > .book > form > select{
+        margin-right: 30%;
+    }
+    
+}
+@media screen and (max-width: 850px) {
+    div.video_demo > .dets{
+        top: 58rem;
+        left: 52rem;
+        width: 12.5%;
+    }
+}
+@media screen and (max-width: 750px) {
+    div.video_demo > .dets{
+        width: 13%;
+        top: 52rem;
+        left: 45rem;
+        padding-left: .2rem;
+
+    }
+    div.video_demo > .dets > span{
+        width: 2rem;
+        height: 2rem;
+        margin: 0;
+        margin: 0 .5rem 0 .5rem;
+    }
+    div.books > .book > form > select{
+        margin-right: 50%;
+    }
+    div.books > .book{
+        height: 72rem;
+    }
+}
+@media screen and (max-width: 700px) {
+    div.video_demo > div > video{
+        width: 115%;
+    }
+    div.video_demo > .dets{
+        width: 14.5%;
+        top: 52rem;
+        left: 45rem;
+    }div.books{
+        width: 115%;
+    }
+    div.books > .book{
+        /* margin-left: 16%; */
+        height: 72rem;
+    }
+    div.books > .book > form input{
+        margin-bottom: 3rem;
+    }
+    div.books > .book > form > select{
+        margin-right: 50%;
+    }
+    /* div.title{
+        margin-left: 18%;
+    } */
+    div.packages{
+        width: 115%;
+    }
+    div.title > span{
+        margin: 0 .5rem;
+    }
+    div.packages > div.content > div{
+        width: 100%;
+    }
+    div.food{
+        width: 115%;
+    }
+    div.food > div.content > div{
+        width: 100%;
+    }
+    div.review{
+        width: 115%;
+    }
+    div.review > div.content{
+        width: 60%;
+    }
+    div.ticket{
+        width: 115%;
+    }
+    div.ticket > div.content > div{
+        width: 100%;
+    }
+    footer{
+        width: 115%;
+        height: 30rem;
+    }
+    footer > ul > li{
+        font-size: 2rem;
+        width: 23%;
+        margin-left: 2%;
+    }
+    footer > ul > li:first-child p{
+        font-size: 1.2rem;
+        text-indent: 1.2rem;
+        margin-top: 1rem;
+    }
+    footer > ul > li > ul a{
+        font-size: 1.2rem;
+    }
+    footer > ul > li > ul > li{
+        margin-top: 1rem;
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    html{
+        font-size: 60%;
+    }
+    header{
+        width: 100%;
+        display: flex;
+        border-bottom: 1px solid white;
+    }
+    header > .logo{
+        width: 75%;
+        text-align: center;
+        padding: 0;
+    }
+    #menu-bar{
+        width: 10%;
+        display: block;
+        color: white;
+        font-size: 3rem;
+        margin: 1.2rem 0 0 1.5rem;
+
+    }
+    #menu-bar:hover{
+        color: orange;
+    }
+    nav.menu2 > ul a:hover{
+        background-color: orange;
+    }
+    .menu{
+        width: 0;
+        display: none;
+    }
+    header > .icon{
+        padding: 0;
+        width: 15%;
+        margin-top: 1.5rem;
+        padding-left: 0.5rem;
+    }
+    section.searchs > form input{
+        width: 95%;
+    }
+    div.login > form{
+        top: 25rem;
+        left: 10.5rem;
+        width: 60%;
+        display: block;
+    }
+    div.login > form > .email, .password{
+        width: 90%;
+        border: 2px solid black;
+    }
+    div.login > form > button{
+        font-size: 3rem;
+        padding: 2rem 0 5rem 0;
+    }
+    div.login > form > h3{
+        font-size: 3rem;
+    }
+    nav.menu2{
+        height: 46.5rem;
+        position: fixed;
+    }
+    div.video_demo > .dets{
+        width: 25%;
+        top: 25rem;
+        left: 20rem;
+        padding-left: .2rem;
+
+    }
+    div.video_demo > .dets > span{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0;
+        margin: 0 .5rem 0 .4rem;
+    }
+    div.books > .shapes{
+        width: 98%;
+    }
+    div.books > .book{
+        width: 100%;
+        height: 68rem;
+    }
+    div.books > .book > form input{
+        margin-bottom: 3rem;
+    }
+    div.books > .book > form > select{
+        margin-right: 25%;
+    }
+    div.video_demo > div > video{
+        width: 115%;
+    }
+    div.books{
+        width: 115%;
+    }
+    div.books > .book{
+        /* margin-left: 16%; */
+        height: 72rem;
+    }
+    div.books > .book > form input{
+        margin-bottom: 3rem;
+    }
+    div.books > .book > form > select{
+        margin-right: 50%;
+    }
+    /* div.title{
+        margin-left: 18%;
+    } */
+    div.packages{
+        width: 115%;
+    }
+    div.title > span{
+        margin: 0 .5rem;
+    }
+    div.packages > div.content > div{
+        width: 100%;
+    }
+    div.food{
+        width: 115%;
+    }
+    div.food > div.content > div{
+        width: 100%;
+    }
+    div.review{
+        width: 115%;
+    }
+    div.review > div.content{
+        width: 60%;
+    }
+    div.ticket{
+        width: 115%;
+    }
+    div.ticket > div.content > div{
+        width: 100%;
+    }
+    footer{
+        width: 115%;
+        height: 23rem;
+    }
+    footer > ul > li{
+        font-size: 1rem;
+        width: 23%;
+        margin-left: 2%;
+    }
+    footer > ul > li:first-child p{
+        font-size: .8rem;
+        text-indent: 1.2rem;
+        margin-top: 1rem;
+    }
+    footer > ul > li > ul a{
+        font-size: .8rem;
+    }
+    footer > ul > li > ul > li{
+        margin-top: 1rem;
+    }
+}
+@media screen and (max-width: 640px) {
+    div.video_demo > .dets{
+        width: 16.5%;
+        top: 39rem;
+        left: 35rem;
+    }
+}
+@media screen and (max-width: 600px) {
+    div.video_demo > .dets{
+        width: 18%;
+        top: 34rem;
+        left: 30rem;
+    }
+}
+@media screen and (max-width: 450px){
+    div.video_demo > .dets{
+        width: 25%;
+        top: 24rem;
+        left: 20rem;
+    }
+}
+
+@media screen and (max-width: 400px){
+    html{
+        font-size: 55%;
+    }
+    div.login > form{
+        left: 9rem;
+    }
+    div.video_demo{
+        width: 115%;
+    }
+    div.video_demo > .dets{
+        width: 25%;
+        top: 23rem;
+        left: 20rem;
+        padding-left: .2rem;
+    }
+    div.video_demo > .dets > span{
+        width: 1.5rem;
+        height: 1.5rem;
+        margin: 0;
+        margin: 0 .5rem 0 .4rem;
+    }
+    /* div.books > .shapes{
+        margin-left: 18%;
+    } */
+    div.video_demo > div > video{
+        width: 100%;
+    }
+    div.books{
+        width: 115%;
+    }
+    div.books > .book{
+        /* margin-left: 16%; */
+        height: 72rem;
+    }
+    div.books > .book > form input{
+        margin-bottom: 3rem;
+    }
+    div.books > .book > form > select{
+        margin-right: 50%;
+    }
+}
+@media screen and (max-width: 370px){
+    div.video_demo > .dets{
+        width: 22%;
+        top: 27rem;
+        left: 23rem;
+    }
+    div.video_demo > .dets > span{
+        width: 1rem;
+        height: 1rem;
+    }
+    /* div.books > .book{
+        margin-left: 15%;
+    } */
+    div.books > .shapes img{
+        width: 102%;
+    }
+    /* div.title{
+        margin-left: 15%;
+    } */
+    div.video_demo > div > video{
+        width: 115%;
+    }
+    div.books{
+        width: 132%;
+    }
+    div.packages{
+        width: 132%;
+    }
+    div.food{
+        width: 132%;
+    }
+    div.review{
+        width: 132%;
+    }
+    div.review > div.content{
+        width: 50%;
+    }
+    div.ticket{
+        width: 132%;
+    }
+    footer{
+        width: 132%;
+        height: 27rem;
+    }
+    footer > ul > li{
+        font-size: 1.5rem;
+    }
+    footer > ul > li > ul a{
+        font-size: 1rem;
+    }
+    footer > ul > li:first-child p{
+        font-size: 1rem;
+    }
+}
+@media screen and (max-width: 350px){
+    div.video_demo > .dets{
+        width: 24%;
+        top: 24rem;
+        left: 21rem;
+    }
+}

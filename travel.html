@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" rel="styleSheet">
+        <link href="travel.css" rel="styleSheet">
+        <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+        <!-- menu -->
+        <header>
+            <div id="menu-bar" class="fas fa-bars"></div>
+            <div class="logo">
+                <span class="text_color">t</span>
+                <span>r</span>
+                <span>a</span>
+                <span class="text_color">v</span>
+                <span>e</span>
+                <span>l</span>
+                <span class="text_color">i</span>
+                <span>n</span>
+                <span>g</span>
+            </div>
+            <nav class="menu">
+                <a href="#home">home</a>
+                <a href="#book">book</a>
+                <a href="#packages">package</a>
+                <a href="#food">food</a>
+                <a href="#review">review</a>
+                <a href="#ticket">ticket</a>
+            </nav>
+            <div class="icon">
+                <a href="javascript:;" class="fas fa-search text_search"></a>
+                <a href="javascript:;" class="fas fa-user text_user"></a>
+            </div>
+            <!-- <form>
+                <input type="search" placeholder="Tìm kiếm..." class="search">
+                <label for="search" class=""></label>
+            </form> -->
+        </header>
+        <section class="searchs">
+            <form>
+                <input type="search" placeholder="Tìm kiếm..." class="search">
+                <label for="search" class="fas fa-search search"></label>
+            </form>
+        </section>
+        <div class="login">
+            <i class="fas fa-times" id="close"></i>
+            <form>
+                <h3>Đăng Nhập</h3>
+                <input type="email" placeholder="Email..." class="email">
+                <br/>
+                <input type="password" placeholder="Password" class="password">
+                <br/>
+                <input type="checkbox" id="remember">
+                <label for="remember">Lưu tài khoản</label>
+                <br/>
+                <button>Đăng nhập</button>
+            </form>
+        </div>
+        <nav class="menu2">
+            <ul>
+                <li><a href="#home">home</a></li>
+                <li><a href="#book">book</a></li>
+                <li><a href="#packages">package</a></li>
+                <li><a href="#food">food</a></li>
+                <li><a href="#review">review</a></li>
+                <li><a href="#ticket">ticket</a></li>
+            </ul>
+        </nav>
+        <!-- end -->
+        <!-- Home -->
+        <div class="video_demo" id="home">
+            <div class="shape" id="shape1">
+                <video src="video/video1.mp4" alt="video1" loop autoplay muted></video>
+            </div>
+            <div class="shape" id="shape2">
+                <video src="video/video3.mp4" alt="video1" loop autoplay muted></video>
+            </div>
+            <div class="shape" id="shape3">
+                <video src="video/video5.mp4" alt="video1" loop autoplay muted></video>
+            </div>
+            <div class="shape" id="shape4">
+                <video src="video/video4.mp4" alt="video1" loop autoplay muted></video>
+            </div>
+            <div class="dets">
+                <span id="dets1" onclick="videos('shape1'), dots('dets1')"></span>
+                <span id="dets2" onclick="videos('shape2'), dots('dets2')"></span>
+                <span id="dets3" onclick="videos('shape3'), dots('dets3')"></span>
+                <span id="dets4" onclick="videos('shape4'), dots('dets4')"></span>
+            </div>
+        </div>
+        <!-- end -->
+        <div class="books" id="book">
+            <div class="title">
+                <span>b</span>
+                <span>o</span>
+                <span>o</span>
+                <span>k</span>
+            </div>
+            <div class="shapes">
+                <img src="shape/shape1.jpg" alt="book">
+            </div>
+            <div class="book">
+                <div class="contact">
+                        <span>b</span>
+                        <span>o</span>
+                        <span>o</span>
+                        <span>k</span>
+                        <span>i</span>
+                        <span>n</span>
+                        <span>g</span>
+                        <span>&nbsp;</span>
+                        <span>n</span>
+                        <span>o</span>
+                        <span>w</span>
+                </div>
+                <form>
+                    <label for="name">Họ tên:</label>
+                    <input type="text" id="name" placeholder="VD: Tất Tấn Tài...">
+                    <label for="CMND">CMND:</label>
+                    <input type="text" id="CMND" placeholder="VD: 079.......">
+                    <label for="phone">SĐT:</label>
+                    <input type="text" id="phone" placeholder="VD: 093.......">
+                    <ul class="date">
+                        <li>
+                            <label for="date_next">Ngày đi:</label>
+                            <input type="date" id="date_next">
+                        </li>
+                        <li>
+                            <label for="date_back">Ngày về:</label>
+                            <input type="date" id="date_back">
+                        </li>
+                    </ul>
+                    <label>Phòng:</label>
+                    <select>
+                        <option>1 giường</option>
+                        <option>2 giường</option>
+                        <option>3 giường</option>
+                        <option>6 giường</option>
+                    </select>
+                    <label for="note">Ghi chú:</label>
+                    <textarea cols="40" id="note" rows="10"></textarea>
+                    <button class="book">Book</button>
+                </form>
+            </div>
+        </div>
+        <div class="packages" id="packages">
+            <div class="title">
+                <span>p</span>
+                <span>a</span>
+                <span>c</span>
+                <span>k</span>
+                <span>a</span>
+                <span>g</span>
+                <span>e</span>
+                <span>s</span>
+            </div>
+            <div class="content">
+                <div>
+                    <img src="shape/nb.jpeg">
+                    <h3><i class="fas fa-map-marker-alt"></i>Japan</h3>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                    <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <p class="sale">
+                        <span>$90.00</span>
+                        <span>$120.00</span>
+                    </p>
+                    <p class="book"><a href="#book">Book Now</a></p>
+                </div>
+                <div>
+                    <img src="shape/phap.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>France</h3>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                    <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <p class="sale">
+                        <span>$90.00</span>
+                        <span>$120.00</span>
+                    </p>
+                    <p class="book"><a href="#book">Book Now</a></p>
+                </div>
+                <div>
+                    <img src="shape/sing.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>Singapro</h3>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                    <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <p class="sale">
+                        <span>$90.00</span>
+                        <span>$120.00</span>
+                    </p>
+                    <p class="book"><a href="#book">Book Now</a></p>
+                </div>
+                <div>
+                    <img src="shape/thai.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>Thai Lan</h3>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                    <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <p class="sale">
+                        <span>$90.00</span>
+                        <span>$120.00</span>
+                    </p>
+                    <p class="book"><a href="#book">Book Now</a></p>
+                </div>
+                <div>
+                    <img src="shape/trung.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>China</h3>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                    <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <p class="sale">
+                        <span>$90.00</span>
+                        <span>$120.00</span>
+                    </p>
+                    <p class="book"><a href="#book">Book Now</a></p>
+                </div>
+                <div>
+                    <img src="shape/my.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>American</h3>
+                    <p>Lorem Ipsum Dolor Sit Amet Consectetur Adipisicing Elit. Veritatis, Nam!</p>
+                    <p>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="fas fa-star"></i>
+                        <i class="far fa-star"></i>
+                    </p>
+                    <p class="sale">
+                        <span>$90.00</span>
+                        <span>$120.00</span>
+                    </p>
+                    <p class="book"><a href="#book">Book Now</a></p>
+                </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+        <div class="food" id="food">
+            <div class="title">
+                <span>f</span>
+                <span>o</span>
+                <span>o</span>
+                <span>d</span>
+                
+            </div>
+            <div class="content">
+                <div>
+                    <img src="shape/annhat.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>Japan's Foods</h3>
+                    <p>Sashimi is a delicious traditional Japanese dish,
+                     in which the main ingredients are fresh seafood. 
+                     The seafood used to make Sashimi is caught using
+                      separate tools, then processed under a special 
+                      process to ensure the freshness of each piece of sashimi.
+                       Some types of seafood that the Japanese often use as 
+                       sashimi are: Salmon, tuna, mackerel, basa, puffer fish,
+                        squid, shrimp, octopus...
+                    </p>
+                </div>
+                <div>
+                    <img src="shape/anphap.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>France's Foods</h3>
+                    <p>Foie gras is a scrumptious dish of French cuisine, 
+                    available in most international standard restaurants 
+                    and moreover not all restaurants are capable of processing 
+                    it. Foie gras is prepared from geese that are cared for 
+                    with a special diet to harness the nutritional content 
+                    of their liver. The way to prepare this dish is also 
+                    considered the most amazing feat of all.
+                    </p>
+                </div>
+                <div>
+                    <img src="shape/ansing.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>Singapro's Foods</h3>
+                    <p>Chili Crab was invented by a Singaporean chef in 1950. 
+                    Since then, this dish seems to have become the "national 
+                    drug" of this country. The crab is mixed with hot egg 
+                    tomato sauce accompanied by the spicy taste of chili 
+                    that will surely make any guest fall in love with even 
+                    the most gourmet.
+                    </p>
+                </div>
+                <div>
+                    <img src="shape/anthai.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>ThaiLan's Foods</h3>
+                    <p>Tom Yum is a Thai dish that is considered a famous 
+                    specialty of Thailand, not only that in 2011 this dish 
+                    was also voted and ranked 8th in the top 50 best dishes 
+                    in the world voted by CNN. Made from shrimp and squid as 
+                    the main ingredients, accompanied by the pungent taste 
+                    of chili, lemongrass, and a little sourness of lemon. 
+                    This is a dish that you should not miss when coming to Thailand.
+                    </p>
+                </div>
+                <div>
+                    <img src="shape/antrung.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>China's Foods</h3>
+                    <p>Peking duck is a famous specialty dish in Northeast 
+                    China, especially in Beijing. The specialty of roast duck 
+                    is thin, crispy, dark yellow duck skin, many restaurants 
+                    serve their own skin and meat dishes. Big and fat Peking 
+                    duck after being roasted in a large fire oven, the 
+                    restaurant cuts the meat and skin to serve customers, 
+                    the remaining bones are stewed to cook soup.
+                    </p>
+                   
+                </div>
+                <div>
+                    <img src="shape/anmy.jpg">
+                    <h3><i class="fas fa-map-marker-alt"></i>American's Foods</h3>
+                    <p>South American ribs are fragrant and extremely stimulating 
+                    to the taste buds. The ribs will be grilled with a large block 
+                    in the oven or microwave, and then served with sauce or eaten, 
+                    it's up to you. Try to hold a piece of ribs and eat comfortably 
+                    to feel its delicious taste!
+                    </p>
+                </div>
+                </div>
+            </div>
+        </div>
+<!-- swiper-container   swiper-wrapper-->
+        <div class="review" id="review">
+            <div class="title">
+                <span>r</span>
+                <span>e</span>
+                <span>v</span>
+                <span>i</span>
+                <span>e</span>
+                <span>w</span>                
+            </div>
+            <div class="swiper-container content">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <img src="shape/h1.png">
+                            <h3>Jen</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum 
+                            asperiores dolorum enim sint quod ipsam distinctio molestias 
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <img src="shape/h2.png">
+                            <h3>Jen</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum 
+                            asperiores dolorum enim sint quod ipsam distinctio molestias 
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <img src="shape/h3.png">
+                            <h3>Jen</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum 
+                            asperiores dolorum enim sint quod ipsam distinctio molestias 
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                    <div class="swiper-slide">
+                        <div class="slide">
+                            <img src="shape/h4.png">
+                            <h3>Jen</h3>
+                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                            Ipsa adipisci quisquam sunt nesciunt fugiat odit minus illum 
+                            asperiores dolorum enim sint quod ipsam distinctio molestias 
+                            consectetur ducimus beatae, reprehenderit exercitationem!</p>
+                            <p>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                            </p>
+
+                        </div>
+                    </div>
+                
+                </div>
+                <div class="swiper-button-next next"></div>
+                <div class="swiper-button-prev prev"></div>
+            </div>
+        </div>
+
+        <div class="ticket" id="ticket">
+            <div class="title">
+                <span>t</span>
+                <span>i</span>
+                <span>c</span>
+                <span>k</span>
+                <span>e</span>
+                <span>t</span>
+            </div>
+            <div class="content">
+                <div>
+                    <div class="shape">
+                        <img src="shape/a1.jpg">
+                        <div class="tickets">
+                            <a href="#book">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="shape">
+                        <img src="shape/a2.jpg">
+                        <div class="tickets">
+                            <a href="#book">Book now</a>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="shape">
+                        <img src="shape/a3.jpg">
+                        <div class="tickets">
+                            <a href="#book">Book now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="shape">
+                        <img src="shape/a4.jpg">
+                        <div class="tickets">
+                            <a href="#book">Book now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="shape">
+                        <img src="shape/a5.jpg">
+                        <div class="tickets">
+                            <a href="#book">Book now</a>
+                        </div>
+                    </div>
+                    
+                </div>
+                <div>
+                    <div class="shape">
+                        <img src="shape/a6.jpg">
+                        <div class="tickets">
+                            <a href="#book">Book now</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <footer class="footer">
+            <ul>
+                <li class="title">About Us
+                    <ul>
+                        <li>
+                            <p>
+                                Travel is the most prestigious tour booking 
+                                company in Vietnam. We have good quality tours 
+                                and reasonable prices. With the motto "Satisfaction 
+                                customers come Satisfy customers go".
+                            </p>
+                        </li>
+                    </ul>
+                </li>
+                <li class="title">airline company
+                    <ul>
+                        <li><a href="#">Vietnam Airlines</a></li>
+                        <li><a href="#">Bamboo Airways</a></li>
+                        <li><a href="#">Vietjet Air</a></li>
+                        <li><a href="#">China Airlines</a></li>
+                        <li><a href="#">Japan Airlines</a></li>
+                        <li><a href="#">American Airlines</a></li>
+                    </ul>
+                </li>
+                <li class="title">Quick Links
+                    <ul>
+                        <li><a href="#home">home</a></li>
+                        <li><a href="#book">book</a></li>
+                        <li><a href="#packages">package</a></li>
+                        <li><a href="#food">food</a></li>
+                        <li><a href="#review">review</a></li>
+                        <li><a href="#ticket">ticket</a></li>
+                    </ul>
+                </li>
+                <li class="title">Follow Us
+                    <ul>
+                        <li><a href="#">Facebook</a></li>
+                        <li><a href="#">Instagram</a></li>
+                        <li><a href="#">Youtube</a></li>
+                        <li><a href="#">Phone</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <div>
+                <p>&copy; Welcome to "TRAVEL" travel company.</p>
+            </div>
+        </footer>
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="travel.js"></script>
+    </body>
+</html>
